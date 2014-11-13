@@ -4,16 +4,18 @@
 	<title>Seed Project</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 	
-	<script src="quick-function.js" text="type/javascript"></script>
-
+	<script src="lib/quick-function.js" text="type/javascript"></script>
+	<script src="lib/commafy.js" text="type/javascript"></script>
 	<script src="lib/underscore.min.js" text="type/javascript"></script>
 	<script src="lib/jquery.js" text="type/javascript"></script>
 	<script src="lib/rivets.js" text="type/javascript"></script>
+	<script src="lib/rivets-binders.js" text="type/javascript"></script>
 	<script src="lib/fastclick.js" text="type/javascript"></script>
 	<script src="lib/bootstrap/js/bootstrap.js" text="type/javascript"></script>
+
+	<script src="lib/savefile.js" text="type/javascript"></script>
 	
-	<script src="src/game.js" text="type/javascript"></script>
-	<script src="src/savefile.js" text="type/javascript"></script>
+	<script src="game.js" text="type/javascript"></script>
 
 	<link  href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link  href="lib/bootstrap/css/bootstrap.override.css" rel="stylesheet">
@@ -63,6 +65,10 @@ window.addEventListener('load', function() {
 		<a href="http://www.reddit.com/r/polatrite" style="text-decoration: underline;">Subreddit</a> | <a href="http://www.reddit.com/r/incremental_games" style="text-decoration: underline;">Incremental Games</a> | <a href="http://www.github.com/Polatrite/polainc-seed" style="text-decoration: underline;">Source</a>
 		<br>
 		
+	</div>
+	<div id="player" class="col-md-9">
+		<h3>{ player.money | currency}</h3>
+		<h4>{ player.workersUsed | bignumber} / { player.workers | bignumber}</h4>
 	</div>
 </div>
 
